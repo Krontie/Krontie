@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday KHUSHII JII! 🎂</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .photo {
+            width: 300px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .photo {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px;
+        }
+        .hearts {
+            font-size: 40px;
+            margin: 20px;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday,Khushii Ji! 🌸</h1>
+        <img src="https://drive.google.com/file/d/1qRFBG-WJWRn_jrcLd_726IJEkEQN8p1d" class="photo" alt="Your Photo">
+        <div class="message">
+            <p>This is a small gift for you meri pyaari bachi,har time aap mera sath thi jab mujhe koi help chahiye thi tb bhi </p>
+            <p>Chahe mein aapko jitna bhi pareshan karta hu usse bhi jaida I Love You 🥰</p>
+            <p>abhi to mujhe kuch samjh nhii aa rh kya bolu kyaa likhu aise bakwaas boht hoti hai par aaj aise express nhii kar paa rh bss Thanks Alot sath rehna kai liya chahe jitni bhii ladai ho aapse aapka sath kabhii nhi chorunga </p>
+            <p>I Love You Choti Bachii</p>
+        </div>
+        <div class="hearts">💖🎉🎂</div>
+    </div>
+<script>
+  // Basic confetti blast on page load
+  const defaults = {
+    spread: 360,
+    ticks: 200,
+    gravity: 0,
+    decay: 0.94,
+    startVelocity: 30,
+    colors: ['#ff69b4', '#ff0000', '#00ff00', '#ffff00'],
+    origin: { y: 0.6 }
+  };
+
+  // Launch confetti when the page loads
+  function shoot() {
+    confetti({
+      ...defaults,
+      particleCount: 80,
+      scalar: 1.2,
+    });
+  }
+
+  // Trigger confetti automatically
+  window.onload = shoot();
+
+  // Optional: Add a button to trigger confetti again
+  function addConfettiButton() {
+    const btn = document.createElement('button');
+    btn.innerHTML = '🎉 More Confetti!';
+    btn.style = 'padding: 10px 20px; font-size: 1.2em; margin: 20px; cursor: pointer;';
+    btn.onclick = shoot;
+    document.querySelector('.container').appendChild(btn);
+  }
+
+  addConfettiButton();
+</script>
+
+</body>
+</html>  
